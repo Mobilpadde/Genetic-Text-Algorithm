@@ -1,0 +1,41 @@
+// pretty:false
+
+$bg: #b5dee1;
+$footer: #555953;
+
+*{ margin: 0; padding: 0; }
+body{
+    font: 12px/1.1 monospace, sans-serif;
+    background: $bg;
+    color: $footer;
+    margin: 15px;
+    text-align: center;
+
+    > *{
+        padding-bottom: 15px;
+    }
+
+    #generation, #overall, #rate{
+        font-style: normal;
+        text-align: center;
+        display: block;
+
+        &:before{
+            font-size: 0.8em;
+
+            content: "Generation: ";
+        }
+    }
+
+    #overall:before{
+        content: "Overall fitness: ";
+    }
+
+    #rate:before{
+        content: "Mutation rate: ";
+    }
+
+    #phrases li{
+        list-style-type: none;
+    }
+}
